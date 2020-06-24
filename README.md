@@ -10,6 +10,7 @@ Here we add training code to reproduce the author's results
 - PyTorch 1.1+
 - OpenCV
 - TensorboardX
+- apex
 
 
 ## preparation
@@ -52,3 +53,5 @@ loss和中间结果可视化
   <img width="600" src="imgs/tensorboardImg.jpg">
 </p>
 
+## 讨论
+模型结构未改动，loss也是参照作者提供的，实验过程中发现tv loss是递增的，尝试剔除它，结果影响不大
